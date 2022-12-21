@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>My Website</title>
-    <link rel="stylesheet" href="./style.css">
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
   </head>
   <body style="display:flex; flex-direction:column; gap: 10px">
@@ -16,11 +15,11 @@
     <img src="b.png" alt="B Image" style="width: 40px;"> 
     <img src="https://a.2do.lc/a.png" alt="A Image" style="width: 40px;"> 
     <script type="text/javascript">
-      fetch('https://b.2do.lc/style.css')
-        .then((response) => response.text())
+      fetch('https://b.2do.lc/b.json')
+        .then((response) => response.json())
         .then((data) => console.log(data));
-      fetch('https://a.2do.lc/style.css')
-        .then((response) => response.text())
+      fetch('https://a.2do.lc/a.json')
+        .then((response) => response.json())
         .then((data) => console.log(data));
     </script>
   </body>
