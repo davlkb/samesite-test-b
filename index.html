@@ -16,7 +16,7 @@
     <img src="b.png" alt="B Image"> 
     <script type="text/javascript">
       fetch('https://b.2do.lc/style.css')
-        .then((response) => response.json())
+        .then((response) => response.text())
         .then((data) => console.log(data));
     </script>
   </body>
