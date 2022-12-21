@@ -14,6 +14,10 @@
     </main>
     <a href="placeholder1">placeholder1</a>
     <img src="b.png" alt="B Image"> 
-    <script src="index.js"></script>
+    <script type="text/javascript">
+      fetch('https://b.2do.lc/style.css')
+        .then((response) => response.json())
+        .then((data) => console.log(data));
+    </script>
   </body>
 </html>
